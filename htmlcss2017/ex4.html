@@ -1,0 +1,73 @@
+<!--
+  Exercise 4: Paragraphs
+  06/19/17
+ -->
+
+<!--
+  Now that you have the basic structure of an HTML document, you can mess around
+  with the content a bit.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Fourth Web Page</title>
+  </head>
+  <body>
+    <p>This is my fourth web page</p>
+    <p>How exciting.</p>
+    <p>Yes, that really <em>is</em> exciting. <strong>WARNING:</strong> level of excitement may cause head to explode.</p>
+    <p>This is my fourth paragraph<br>How exciting.</p>
+  </body>
+</html>
+
+<!--
+  When you make this change to your webpage what occurs?
+    The text is concatenated and put on the same line!
+    <body>
+      This is my fourth web page
+      How exciting
+    </body>
+      Appears as - This is my fourth web page How exciting.
+
+  This occurs because web browsers don't take any notice of what line
+  your code is on. It also doesn't take any notice of spaces even if you put
+  spaces between the two lines of text. ("This is my fourth web page      How exciting").
+
+  Paragraph tag -
+    If you want to change this, remember that HTML is about meaning, not presentation!
+    You need to specify the situation. Modify your work with the paragraph tag:
+
+    <p>This is my fourth web page</p>
+    <p>How exciting</p>
+
+    Look at your results, how do they appear?
+      Appears as - This is my fourth web page
+
+                   How exciting.
+
+    The two lines will now appear on two lines because the browser recogizes them as
+    separate paragraphs.
+    Think about the HTML content as if it were a book - with paragraphs where appropriate.
+
+  Italics and Bold tags -
+    Add this to your code:
+      <p>Yes, that really <em>is</em> exciting. <strong>Warning:</strong> level of excitement
+      may cause head to explode</p>
+    What does it look like?
+      Appears as - within the <em> and </em> tags the text is italicized. <i>
+                   within the <strong> and </strong> tags the text is bold. <b>
+
+  Line Break tag -
+    The line-break tag an be used to separate lines like this:
+      This is my first web page <br>
+      How exciting
+    There is no content involved in breaking lines so there is no closing tag.
+    Instead of creating a new line between the two lines of text, one's on top of the other.
+
+    IT COULD BE TEMPTING TO OVER-USE line brekas and br shouldn't be used if two blocks of text
+    are intended to separte from one another (because if that's what you want to do ou proably want
+    the p tag). 
+
+
+-->
