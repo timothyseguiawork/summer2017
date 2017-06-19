@@ -1,0 +1,55 @@
+<!--
+  Exercise 2: Tags
+  06/19/17
+-->
+
+<!--
+  The basic structure of an HTML document includes tags, which surround content
+  and apply meaning to it.
+-->
+
+<!DOCTYPE html> <!-- (1) This is a document type declaration.  -->
+<html> <!-- (2) <html>, the opening tag.  -->
+  <body> <!-- (3) -->
+    This is my first web page.
+  </body> <!-- (3) -->
+</html> <!-- (2) </html>, the closing tag. -->
+
+<!--
+  Save and look at what happened to this page.
+    Nothing happened, it still looks the same, what's the difference?
+
+  The purpose of this change is to apply meaning, not presentation, and now this
+  example has now defined some fundamental elements of a web page.
+
+  (1) A document type declaration lets the browser know which flavor of html you're using.
+      HTML5 in this case. It's very important to stick this in because if you don't,
+      browsers will assume you don't really know what you're doing and act in a
+      very peculiar way.
+  (2) The opening tag tells the browser that everything between the <html> and </html>
+      closing tag is an HTML document.
+  (3) The stuff between <body> and </body> is the main content of the document that
+      will appear in the browser window.
+
+  Closing Tags
+    They put a close to their respective elements
+    All tags with content should be closed:
+      open tag -> content -> close tag
+    It isn't, strictly speaking, always a requirement but it's a convention
+      we're using in these tutorials because it's a good practice that results in
+      clearer and easier to understand code.
+
+  Attributes
+    Tags can also have attributes, extra bits of information:
+      <tag attribute = "value"> Margarine </tag>
+
+  Elements
+    Tags tend not to do much than mark the beginning and the end of an element.
+    Elements are the bits that make up web pages. You would say, for example, that
+      everyhing that is in between (and includes) the <body> and </body> tags
+      is the body element. as another example, whereas "<title>" and "</title>"
+      are tags. "<tile> Rumple Stiltskin </title>" is an element.
+
+    Other elements are <h1></h1> Working with sizes of headers.
+    <p> </p> working with paragraphs. 
+-->
