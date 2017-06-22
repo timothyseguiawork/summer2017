@@ -1,0 +1,37 @@
+<!--
+  Exercise 8: Images
+  06/21/17
+-->
+<!--
+  The img tag is used to put an image in an HTML document and it looks like this:
+  <img src="http://www.htmldog.com/badgel.gif" width = "120" height = "90" alt = "HTML Dog">
+
+    src tells us where to find the image, you can create an image and name it as htmldog.gif
+
+    the width and height attributes are necessary because if they are excluded the browser will
+      tend to calculate the size as the image loads. Which means that the layout of the document may
+      jump around while the page is loading.
+
+    alt attriute is the alternative description. An accessibility consideration, providing meaningful
+    info for users who are unable to see the image.
+
+    Note that like the br tag, the image tag doesn't enclose anything so no closing tag is required.
+
+    JPEGs are used for images like photographs
+    GIFs usually used for images with solid colors, icons, or logos.
+    PNGs are used for more versatile images in more complex designs. Not fully supported by other browsers.
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My eighth webpage</title>
+  </head>
+  <body>
+    <h2>What is this</h2>
+    <p>A simple page put together using html.</p>
+    <h2>Why is this</h2>
+    <p>To learn HTML</p>
+    <h2>Have an image from the tutorial!</h2>
+    <img src="http://www.htmldog.com/badgel.gif" width="120" height="90" alt="HTML Dog">
+  </body>
+</html>
