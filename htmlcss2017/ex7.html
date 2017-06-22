@@ -1,0 +1,44 @@
+<!--
+  Exercise 7: Links
+  06/21/17
+-->
+
+<!--
+  Well so far you've been making a stand-alone webpage, which is all very well
+  and nice but what makes the internet so special is that the internet links together.
+
+  "H" and "T" in HTML stands for "hypertext" which basically means a system of linked text.
+
+  Anchor tag, "a", is used to define a link, but you also need to add something to the
+  anchor tag - the destination of the link.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title id="title">My seventh webpage</title>
+  </head>
+  <body>
+    <h1>My seventh webpage</h1>
+
+    <h2>What is this</h2>
+    <p>A simple page put together using html</p>
+
+    <h2>Why is this</h2>
+    <p>To learn HTML</p>
+    <h2 id="tutorial">Where to find the tutorial</h2>
+    <!--
+      The Destination of the link is defined in the href attribute of the tag.
+      The link can be absolute, or it cna be relative to the current page.
+      So if, for example you had another file caled ex5.html in the same directory
+      then the line of code would be "<a href = "ex5.html">Exercise 5: Headings</a>"
+
+      A link can also send a user to another part of the same page they are on.
+      You can add an ID attribute to just about any tag. "<h2 id = "moss"> MOSS </h2>"
+      <a href ="#moss"> Go to moss</a> Selecting this link will scroll the page right to
+      the element with that ID.
+    -->
+    <p><a href="http://www.htmldog.com">HTML Dog</a></p>
+    <a href="#title">Go to Title</a>
+  </body>
+</html>
