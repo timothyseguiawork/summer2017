@@ -1,0 +1,89 @@
+<!--
+  Exercise 1: Applying CSS
+  06/27/17
+-->
+
+<!--
+  There are 3 ways to apply CSS to HTML
+  (1) Inline
+  (2) Internal
+  (3) External
+-->
+
+<!--
+  Inline
+    Inline styles are plonked straight into the HTML tags using the "style"
+    attribute
+    They look something like this:
+
+      <p style="color: red">text</p>
+
+    This makes that specific paragraph red.
+    If you remember, the best-practice approach is that HTML should be a stand-
+    alone, presentation free document, and so in-line styles should be avoided
+    whenever possible.
+
+  Internal
+    Embedded, or Internal styles are used for the whole page.
+    Inside the head element, the style tags surround all of the styles for the page.
+    They look something like this:
+
+      <!DOCTYPE html>
+      <html>
+        <head>
+          <title>CSS Example</title>
+          <style>
+            p {
+              color: red;
+            }
+            a {
+              color: blue;
+            }
+          </style>
+        </head>
+        <body>
+          ...
+        </body>
+      </html>
+
+    This makes all of the pargraphs red and all of the links blue.
+
+    Although preferable to soiling our HTML with inline presentation, it is similarly
+    usually preferable to keep the HTML andn CSS files separate.
+
+  External
+    These Style sheets are used for the whole, multiple-page website. There is a
+    separate CSS file, which will simply look like:
+
+      p {
+        color: red;
+      }
+      a {
+        color: blue;
+      }
+
+    If this file i ssaved as "style.css" in the same directory as your HTML page
+    then it can be linked in to the HTML like this:
+      <!DOCTYPE html>
+      <html>
+      <head>
+        <title>CSS Example</title>
+        <link rel="stylesheet" href="style.css">
+      </head>
+      ...
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My First Webpage With CSS</title>
+    <link rel="stylesheet" href="ex1.css">
+  </head>
+  <body>
+    <h1>My First Webpage with CSS</h1>
+    <h2>What is this?</h2>
+    <p>A simple webpage made with HTML and CSS</p>
+    <h2>Why is this?</h2>
+    <p>To demonstrate the wonders of external CSS</p>
+    <p>All from <a href="http://www.htmldog.com/guides/css/beginner/applyingcss/">THIS TUTORIAL</a></p>
+  </body>
+</html>
