@@ -1,0 +1,51 @@
+<!--
+  Exercise 1: Making Stuff Happen
+  06/27/17
+-->
+
+<!--
+  JavaScript runs in your web browser alongside HTML and CSS and can be added to
+  any web page using a script tag.
+  The script element can either contain JavaScript directly (internally)
+  or link to an external resource via a SRC attribute (external)
+
+  *MUST BE PUT IN THE HEAD OF THE DOCUMENT!*
+
+  Internal
+    You can just put the Javascript inside a script element:
+
+    <script>
+      alert("Hello, world.");
+    </script>
+
+  External
+    An external JavaScript resource is a textfile with a .js extension.
+    To add a Javascript file to your page, you just need to use a script ag with a
+    src attribute pointing to the file. So, if your file was called script.js
+    and sat in the same directory as your HTML file, your script element would look
+    like this:
+      <script src="script.js"></script>
+
+  Console
+    The last way is great for getting instant feedback, and it's recommended if
+    you just want to try a line out quickly.
+    In a modern browser you'll find some developer tools - often you can right
+    click a page, then click "inspect element" to bring them up. Find the console
+    and you'll be able to type JavaScript, hit enter and have it run immediately.
+    Search the net if you can't find your dev tools or console- they're changing
+    in browsers all the time.
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My First Webpage with JavaScript</title>
+    <script src="ex1.js"></script>
+  </head>
+  <body>
+    <h1>My First Webpage with JavaScript</h1>
+    <h2>What is this?</h2>
+    <p>A simple page made with HTML and External JavaScript</p>
+    <h2>Why is this?</h2>
+    <p>To demonstrate the wonders of HTML and JavaScript.</p>
+  </body>
+</html
