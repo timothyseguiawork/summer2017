@@ -1,0 +1,92 @@
+<!--
+Exercise 4: Text
+07.17.17
+-->
+
+<!--
+You can alter the size and shape of the text on a web page with a range of properties.
+font-family
+  - the font itself, Times New Roman, Arial, or Verdana
+  - few safe fonts: arial, verdana, and times new roman
+  - you can specify more than one separated by commas.
+  font-family: arial, helvetica, serif
+  if it doesn't have arial, helvetica is shown, so on and so forth.
+  if a font is more than one word it should be in quotes
+  font-family: "Times New Roman"
+
+font-size
+  - sets the size of the font. Headings should not just be an html paragraph in a large font.
+
+font-weight
+  - states whether the text is bold or not.
+  font-weight: bold;
+  font-weight: normal;
+  - other values are bolder, lighter, 100, 200, 300, 400(normal), 500, 600, 700(bold)
+    800, 900
+
+font-style
+  - font-style states whether the text is italic or not.
+  font-style: italic;
+  font-style: normal;
+
+text-decoration
+  - states whether the text has gota line running under, over, or through it.
+  text-decoration: underline; under
+  text-decoration: overline; above
+  text-decoration: line-through; through
+  text-decoration: none; cancels out decorations
+
+text-transform
+  - will change the case of the text
+  text-transform: capitalize; turns the first letter of every word into uppercase
+  text-transform: uppercase; turns everything into uppercase
+  text-transform; lowercase; turns everything lowercase
+  text-transform: none; cancels out transformation
+
+text spacing
+  - how to space out the text on the page
+  letter-spacing, word-spacing are for spacing between letters and words. can be a length or normal.
+  line-height sets the height of lines in an element. 2 would make the lines 2x the font-size.
+  text-align will align the text inside an element ot the left, right, center, or justify
+  text-indent will indent the first line of a pargraph to a given length or percentage
+
+body{
+font-family: arial, helvetica, sans-serif;
+font-size: 14px;
+}
+h1{
+font-size: 2em;
+}
+h2{
+font-size: 1.5em;
+}
+a{
+text-decoration: none;
+}
+strong{
+font-style: italic;
+text-transform: uppercase;
+}
+p{
+letter-spacing: 0.5em;
+word-spacing: 2em;
+line-height: 1.5;
+text-align: center;
+}
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My 4th Webpage</title>
+  <link ref="stylesheet" href="ex4.css">
+</head>
+<body>
+  <h1>My 4th Webpage</h1>
+  <h2>What is this?</h2>
+    <p>A demonstration of the combination between ex4.html and ex4.css</p>
+  <h2>Why is this?</h2>
+    <p>To get a better understanding of the <strong>manipulation</strong> of text in CSS</p>
+    <a href="http://www.facebook.com">Facebook.com</a>
+</body>
+</html>
