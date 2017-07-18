@@ -1,0 +1,52 @@
+<!--
+Exercise 5: Margins and Padding
+07.08.17
+-->
+
+<!--
+margin and padding are the two most commonly used properties for spacing-out elements
+A margin is the space outside something, whereas padding is the space inside something.
+
+Change CSS code for h2 to the following:
+
+h2{
+font-size: 1.5em;
+background-color #ccc;
+margin: 20px;
+padding: 40px;
+}
+This leaves a 20-pixel width space around the secondary header and the ehader itself is fat from
+the 40 pixel-width padding.
+
+The four sides of an element can also be set indvidually. margin-top, margin-right,
+margin-bottom, margin-left, padding-top, padding-right, padding-bottom, and padding-left
+are the self explanatory properties you can use.
+
+The Box Model
+ ____________________________________
+|Margin Box _______________________  |
+| |Border Box ___________________  | |
+| | | Padding Box ________       | | |
+| | |       | Element Box |      | | |
+| | |____________________________| | |
+| |________________________________| |
+|____________________________________|
+
+You don't need to know everything but it can be helpful to remember that the box model can
+be applied to every element on the page, and that's a powerful thing!
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My 5th Webpage</title>
+  <link ref="stylesheet" link="ex5.css">
+</head>
+<body>
+  <h1>My 5th Webpage</h1>
+  <h2>What is this?</h2>
+  <p>A demonstration of padding for the secondary headers.<p>
+  <h2>Why is this?</h2>
+  <p>To view the changes the CSS applies to the HTML structure.</p>
+</body>
+</html>
