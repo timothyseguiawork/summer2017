@@ -1,0 +1,53 @@
+<!--
+Exercise 12: Span and Div
+07.19.17
+-->
+
+<!--
+HTML is about applying meaning to content. Whereas most HTML tags apply meaning
+(p makes a pargraph, h1, means heading...), the span and div tags apply no meaning
+whatsoever.
+This might sound about as useful as a foam hammer but they are actually used
+quite extensively with CSS
+They are used to group together a chunk of HTML and hook some information onto
+that chunk, most commonly with the attributes class and id to associate the element
+with a class or id CSS selector
+
+Differences:
+  - span is an in-line and used for small chunk of HTML inside a line.
+    (such as a pargraph)
+  - div (divison) is a block-line which is basically equivalent to having a line-break
+    before and after it.
+    and used to group larger chunks of code.
+
+<div id="scissors">
+  <p>This is <span class="paper">crazy</span></p>
+</div>
+
+div, and especially span, shouldn't be used that often. Whenever there is a
+sensible alternative that should be used instead. For example, if you want to emphasize
+the word "crazy" and the class "paper" is adding italics for visual emphasis, then, for
+richer, more meaningful content, the code might look like this.
+
+<div id="scissors">
+  <p>This is <em><span class="paper">crazy</span></em></p>
+</div>
+
+Just remember that div and span are meaningless tags.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My 12th Webpage</title>
+</head>
+<body>
+  <h1>My 12th Webpage</h1>
+  <h2>What is this?</h2>
+  <div id="scissors">
+    <p>This is <strong><em><span class="paper">crazy</span></em></strong></p>
+  </div>
+  <h2>Why is this?</h2>
+  <p><strong><em>Crazy</em></strong> indeed.</p>
+</body>
+</html>
