@@ -1,0 +1,68 @@
+<!--
+Exercise 14: Meta Tags
+07.19.17
+-->
+
+<!--
+Meta tags don't do anything to the content htat is present in the browser window
+but they are used by the likes of search engines to catalogue information about
+the webpage.
+
+There is one meta tage which can be used as many times as you desire a head
+element and they can contain the attributes:
+  - charset
+  - name
+  - http-equiv
+  - content
+
+When the name or http-equiv attributes are used, the content attribute is then used
+in conjunction wiht them to apply meta data itself.
+
+Names name
+  the name attribute can be anything you like. The most commonly used names are author,
+  description, and keywords.
+  author is used to explicitly state one of the HTML page's authors and description is
+  often used by search engines (such as Google) to display a description of a web page
+  in its search results.
+
+  The reason why meta tages used to be so important was because they were relied on by
+  search engines to build a profile of a web page. The keywords meta dat was used
+  (and abused) extensively, for example. Nowadays, however, most searcch engines use
+  the actual content of the page itself.
+
+HTTP Equivalents
+  http-equiv attribute can be used instead of the name attribute will make an HTTP
+  header, which is information sent to the server where the web page is held.
+  The attribute should rarely be used (although see charset note, below) but the value
+  can be:
+    - content-type, an encoding declaration, defining what character set is being used.
+    - default-style, the preferred stylesheet from a selection of link or style elements
+    - refresh, which defines how often (in seconds) a page automatically refreshes or if it
+      should automatically redirect to another page. Not great for accessibility.
+
+  The charset attribute can be used as a shorthand method to define an HTML document's character
+  set, which is always a good thing to do.
+    <meta charset="utf-8"> is the same as <meta http-equiv="content-type" content="text/html";
+    charset=utf-8">.
+
+<head>
+    <title>Air Conditioners? YEAH conditioners!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="3">
+    <meta name="description" content="This is my really, really, really exciting web
+    page about air conditioners">
+    ...
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Air conditioners? YEAH conditioners!</title>
+  <meta charset="utf-8">
+  <meta http-equiv="refresh" content="3">
+  <meta name="description" content="This is my really, really, really exciting web page
+  about air conditioners">
+</head>
+<body>
+</body>
+</html>
