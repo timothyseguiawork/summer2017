@@ -1,0 +1,76 @@
+<!--
+Exercise 15: rowspan and colspan
+07.19.17
+-->
+
+<!--
+Tables become trickier.
+
+<table>
+  <tr>
+    <th>Column 1 Heading</th>
+    <th>Column 2 Heading</th>  header cells
+    <th>Column 3 Heading</th>
+  </tr>
+
+  <tr>
+    <td>Row 2, Cell 1</td>
+    <td colspan="2">Row 2, Cell 2, also spanning Row 2, cell 3</td>
+  </tr>
+
+  <tr>
+    <td rowspan="2">Row 3, Cell 1, also spanning Row 4, Cell 1</td>
+    <td>Row 3, Cell 2</td>
+    <td>Row 3, Cell 3</td>
+  </tr>
+
+  <tr>
+    <td>Row 4, Cell 2</td>
+    <td>Row 4, Cell 3</td>
+  </tr>
+</table>
+
+Header Cells th
+  The first difference is that the "td" tags of the first row have been replaced
+  with "th" tags. Whereas a "td" is a standard data cell, "th" is  header cell. As with
+  "td" elements, these must be enclosed inside "tr" elements.
+
+Spanning columns and rows colspan, rowspan
+  colspan and rowspan attributes have also been used in some of the td tags. If you look
+  at this code in a browser, you will see that on the second row there are now
+  two cells instead of three, the second cell spanning the second and thrid column.
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My 15th Webpage</title>
+</head>
+<body>
+  <h1>My 15th Webpage</h1>
+  <h2>What is this?</h2>
+  <p>A demonstration of columnspan, rowspan, and header cells.</p>
+  <h2>Tables become trickier</h2>
+  <table>
+    <tr>
+      <th>Column 1 Header</th>
+      <th>Column 2 Header</th>
+      <th>Column 3 Header</th>
+    </tr>
+    <tr>
+      <td>Row 2, Cell 1</td>
+      <td colspan="2">Row 2, Cell 2, Also spanning Row 2, Cell 3</td>
+    </tr>
+    <tr>
+      <td rowspan"2">Row 3, cell 1, also spanning Row 4, Cell 1</td>
+      <td>Row 3, Cell 2</td>
+      <td>Row 3, Cell 3</td>
+    </tr>
+    <tr>
+      <td>Row 4, Cell 2</td>
+      <td>Row 4, Cell 3</td>
+    </tr>
+  </table>
+</body>
+</html>
