@@ -1,0 +1,20 @@
+<!--
+Exercise 20: Conditional Comments
+07.20.17
+-->
+
+<!--
+Conditional Comments
+-->
+<p>Everything between <!--[if IE]> and <![endif]--> will be picked up by Internet Explorer. So this will bolt on a CSS file as normal, and then, only if the browser is Internet Explorer (in practice, this will be Internet Explorer version 9 and below), it will also apply an extra CSS file patch.
+You can also target specific versions of Internet Explorer:</p>
+<!--[if IE 6>… -->
+<!--[if IE 7>… -->
+<!--[if IE 8>… -->
+<!--[if IE 9>… -->
+
+<p>You can also target all versions that are greater or less than a certain number:
+eg. <!--[if IE gt 6]>… for IE versions greater than 6 -->
+eg. <!--[if IE gte 8]>… for IE versions greater than or equal to than 8 -->
+eg. <!--[if IE lt 7]>… for IE versions less than 7 -->
+eg. <!--[if IE lte 7]>… for IE versions less than or equal to 7 --> </p>
