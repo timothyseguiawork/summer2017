@@ -1,0 +1,64 @@
+<!--
+Exercise 19: Time, Mark, and Presentational
+07.20.17
+-->
+
+<!--
+Time "time"
+  "time" is used to make dates and times super-semantically rich.
+
+<p>Written by Doctor Who on <time datetime="2052-11-21">Thursday 21st November 2052</time>.</p>
+
+  "datetime" values can take the format of a year-month-day date
+  or a fuzzy date "2052-11", of a time such as 09:30 or a combination such as
+  "2052-11-21 09:30"
+
+Mark "mark"
+  Text can be highlighted, as if with a marker pen, using "mark"
+
+<blockquote>
+  <p>He wants to play with his <mark>Legos</mark></p>
+</blockquote>
+<p>The person being quoted is clearly American becacuse, for some odd reason, they pluralise "lego".</p>
+
+Redefining the "presentational tags"
+  "hr" = thematic break like those found in a book
+  "small" = small print
+  "s" = Text that is no longer correct
+  "u" = Unarticulated
+  "i" = Alternative voice
+  "b" = text to which attention is being drawn without conveying importance
+  "sub" = subscript
+  "sup" = superscript
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My 19th Webpage</title>
+</head>
+<body>
+  <h1>My 19th Webpage</h1>
+  <h3>An Example of "time"</h3>
+  <p>Written by Doctor Who on <time datetime="2052-11-21">Thursday 21st November 2052</time>.</p>
+  <p>Written by Timothy Seguia on <time datetime="2017-20-07 09:56">Thursday 20th July 2017 09:56</time>.</p>
+
+  <h3>An Example of Mark</h3>
+  <blockquote>
+    <p>He wants to play with his <mark>Legos</mark></p>
+  </blockquote>
+  <p>The person being quoted is clearly American because, for some odd reason, they pluralise "Lego".</p>
+
+  <h3>Example of Presentational Quotes</h3>
+  <p>Before the Horizontal Break</p>
+  <hr>
+  <p>After the Horizontal Break</p>
+  <small><p>Small Print Example small</p></small>
+  <s><p>s is text that is no longer correct s</p></s>
+  <u><p>text that is unarticulated u</p></u>
+  <i><p>text that in an alternative voice and differently emphasized i</p></i>
+  <b><p>text that requires attention b</p></b>
+  <p>H<sub>2</sub>O sub</p>
+  <p>GV<sup>O</sup>GO sup</p>
+</body>
+</html>
