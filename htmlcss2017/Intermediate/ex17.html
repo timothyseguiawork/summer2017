@@ -1,0 +1,82 @@
+<!--
+Exercise 17: Addresses, Definitions, Bi-Directional, and Editorial
+07.20.17
+-->
+
+<!--
+Addresses "address"
+  "address" should be used specifically for the contact details relating either to
+  the entire web page (and so only used once) or to an "article" element. It isn't,
+  as it might first appear, for marking up any old address willy-nilly.
+
+<h3>Author contact details</h3>
+<address>
+<ul>
+  <li>0123-456-7890</li>
+  <li>author_dude@noplaceinteresting.com</li>
+  <li>http://www.noplaceinteresting.comm/contactme/</li>
+</ul>
+</address>
+
+Definition terms "dfn"
+  "dfn" is a definition term and is used to highlight the first use of a term. Like
+  "abbr", the "title" attribute can be used to describe the term.
+
+<p>Bob's <dfn tile="Dog">canine</dfn>mother and <dfn title="Horse">equine</dfn> father
+sat him down and carefully explained that he was an <dfn title="A mutation that combines
+or more sets of chromosomes from different species">allopolyploid</dfn> organism.</p>
+
+Bi-directional text "bdo"
+  "bdo" can be used to reverse the direction of the text, and can be used to display languages
+  that read right ot left. The value of the required attribute "dir" can be "ltr" (left to right)
+  or "rtl" (right to left)
+
+<bdo dir="rtl">god lmth</bdo>
+
+Editorial text "ins" and "del"
+  "ins" and "del" are used to display editorial insertions and deletions respectively.
+  Strictly speaking, they aren't limited to text and can be used over whole swathes of
+  content but, typically, they are used in moderation just like "Trackc Changes" feature
+  in word processors tend to be.
+
+  They can have the attributes "datetime" to indicate when the edit was made and "cite",
+  to point a description as to why the edit has been made.
+
+<p>I have decided to <del datetime="2013-01-26">decrease</del>
+<ins cite="http://www.icecreamforall.com/changeofpolicy/">increase</ins> the amount of
+free icecream that the State will provide for its citizens.</p>
+
+"ins" element is typically shown underlined and the "del" element is usually displayed with a strikethrough
+
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My 17th Webpage</title>
+  </head>
+  <body>
+    <h1>My 17th Webpage</h1>
+    <h2>Addresses, Definitions, Bi-Directional, and Editorial Text</h2>
+    <h3>Addresses</h3>
+    <h4>Author contact details</h4>
+    <address>
+      <ul>
+        <li>0123-456-7890</li>
+        <li>author_dude@noplaceinteresting.com</li>
+        <li>http://www.noplaceinteresting.com/contactme/</li>
+      </ul>
+    </address>
+    
+    <h3>Definition Terms</h3>
+    <p>Bob's <dfn tile="Dog">canine</dfn> mother and <dfn title="Horse">equine</dfn> father
+      sat him down and carefully explained that he was an <dfn title"A mutation that combines
+      two or more sets of chromosomes from different species">allopolyploid</dfn> organism.</p>
+
+    <h3>Bi-directional Text</h3>
+    <bdo dir="rtl">god lmth</bdo>
+
+    <h3>Editorial Text</h3>
+    <p>I have decided to <del datetime="2013-01-26">decrease</del> <ins cite="http://www.icecreamforall.com/changeofpolicy/">
+      increase</ins> the amount of free ice cream that the state will provide for its citizens.</p>
+  </body>
+</html>
