@@ -1,0 +1,137 @@
+<!--
+Exercise 21: Columns headers and Footers
+08.02.17
+-->
+
+<!--
+The Columns Strike Back: colgroup and col
+  <table>
+    <colgroup>
+      <col>
+      <col class="alternative">
+      <col>
+    </colgroup>
+  <table>
+  <tr>
+    <td>This</td>
+    <td>That</td>
+    <td>The other</td>
+  </tr>
+  <tr>
+    <td>Ladybird</td>
+    <td>Locust</td>
+    <td>Lunch</td>
+  </tr>
+  </table>
+
+  In this case, the styles of the CSS class "alternative" will be applied to the
+  second column, or the second cell in evrey row.
+
+  One could also use the span attriute in a similar way to rowspan and colspan. Using
+  it with the colgroup tag will define the number of rows that the column group will
+  belong to, for example <colgroup span="2"></colgroup>
+  would group the first two columns.
+  Using span in the col tag is usually more useful.
+
+  <table>
+    <colgroup>
+      <col>
+      <col span="2" class="alternative">
+    </colgroup>
+  </table>
+
+  This will apply "alternative" to the last two columns.
+  When span is used in colgroup, you shouldn't then use col tags.
+
+Caption interlude: caption
+  An accessibility option would be to add a caption to the table.
+  The caption element defines the caption and should be used straight after the
+  opening table tag.
+
+  <table>
+    <caption>Locust Mating Habits</caption>
+    ...
+
+Headers and Footers: thead, tfoot, tbody
+  header, footer, body (tables can be sectioned as such) Which can be handy when dealing
+  with larger tables.
+
+  thead needs to come first, tfoot can in fact come in before a tbody. One can have
+  more than one tbody. although browsers will render the tfoot element at the bottom
+  of the table.
+
+  <table>
+    <thead>
+      <tr>
+        <td>Header 1</td>
+        <td>Header 2</td>
+        <td>Header 3</td>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <td>Footer 1</td>
+        <td>Footer 2</td>
+        <td>Footer 3</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr>
+        <td>Cell 1</td>
+        <td>Cell 2</td>
+        <td>Cell 3</td>
+      </tr>
+    </tbody>
+  </table>
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My 21st Webpage</title>
+    <link rel="stylesheet" href="blank.css">
+  </head>
+  <body>
+    <h1>My 21st Webpage</h1>
+    <h2>What is this?</h2>
+    <p>Demonstration of tables with column, headers, and footers.</p>
+    <h2>Usage of colgroup</h2>
+    <table>
+      <colgroup>
+        <col>
+        <col class="alternative">
+        <col>
+      </colgroup>
+      <tr>
+        <td>This</td>
+        <td>That</td>
+        <td>The Other</td>
+      </tr>
+    </table>
+    <h2>Usage of thead, tfoot, tbody</h2>
+    <table>
+      <caption>Usage of thead, tfoot, and tbody caption</caption>
+      <thead>
+        <tr>
+          <td>Header 1</td>
+          <td>Header 2</td>
+          <td>Header 3</td>
+        <tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <td>Footer 1</td>
+          <td>Footer 2</td>
+          <td>Footer 3</td>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr>
+          <td>Body(Cell) 1</td>
+          <td>Body(Cell) 2</td>
+          <td>Body(Cell) 3</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
