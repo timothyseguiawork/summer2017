@@ -1,0 +1,126 @@
+<!--
+Exercise 23: Accessible Forms
+08.04.17
+-->
+
+<!--
+Forms aren't the easiest of things to use for people with disabilites.
+Navigating around a page with written content is one thing hopping between form
+fields and inputting information is another. Because of this, it is a good idea to
+add a number of elements to the form.
+
+Labels "label"
+  Each form field should have it's own explicit "label". The "label" tag sorts
+  this out, with a "for" attribute that associates it to a "form" element:
+
+<form>
+  <label for="yourName">Your Name</label>
+  <input name="yourName" id="yourName">
+
+  Labels have the added bonus of visual browsers rendering the labels themselves
+  clickable, putting the focus on the associated form field.
+
+  Both the "name" and "id" attributes are typically required; the "name" for the form
+  to handle that field and the "id" for the "label" to associate it to.
+
+Field Sets and Legends "fieldset"
+  You can group fields, for example name (first,last,middle,title,etc.) or address
+  (line 1, line 2, county, country, postal code, country etc.) using the "fieldset"
+  tag.
+
+  Within the field set, you can set a caption with the "legend tag"
+
+<form action="somescript.php">
+  <fieldset>
+    <legend>Name</legend>
+    <p>First Name <input name="firstName"></p>
+    <p>Last Name <input name="lastName"></p>
+  </fieldset>
+  <fieldset>
+    <legend>Address</legend>
+    <p>Address <textarea name="address"></textarea></p>
+    <p>Postal code <input name="postcode"></p>
+  </fieldset>
+
+  Most browsers tend to represent field sets with a border surrounding them and the
+  legend caption breaking the left of the top border by default. You can, of course,
+  change this with CSS if you wish.
+
+Option Groups "optgroup"
+  The "optgroup" element groups options in a select box. It requries a "label" attribute,
+  the value which is displayed as a non-selectable pseudo-heading preceding that group in
+  the drop-down list of visual browsers.
+
+<select name="country">
+  <optgroup label="Africa">
+    <option value="gam">Gambria</option>
+    <option value="mad">Madagascar</option>
+    <option value="nam">Nambia</option>
+  </optgroup>
+  <optgroup label="Europe">
+    <option value="fra">France</option>
+    <option value="rus">Russia</option>
+    <option value="uk">UK</option>
+  </optgroup>
+  <optgroup label="North America">
+    <option value="can">Canada</option>
+    <option value="mex">Mexico</option>
+    <option value="usa">USA</option>
+  </optgroup>
+</select>
+
+Navigating Fields
+  Like links, form fields and field sets need to be navigated to without the use
+  of a pointing device such as a mouse. The same methods used in links to make this
+  task easier can be used on form elements - tab stops and access keys.
+
+  "accesskey" and "tabindex" attributes can be added to the individual form tags
+  such as "input" and also to "legend" tags
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My 23rd Webpage</title>
+</head>
+<body>
+  <h1>My 23rd Webpage</h1>
+  <h2>Labels (for forms)</h2>
+  <form>
+    <label for="yourName">Your Name</label>
+    <input name="yourName" id="yourName">
+  </form>
+  <h2>Field Sets and Legends</h2>
+  <form action="somescript.php">
+    <fieldset>
+      <legend>Name</legend>
+      <p>First Name <input name="firstName"></p>
+      <p>Last Name <input name="lastName"></p>
+    </fieldset>
+    <fieldset>
+      <legend>Address</legend>
+      <p>Address <textarea name="address"></textarea></p>
+      <p>Postal Code <input name="postcode"></p>
+    </fieldset>
+  </form>
+  <h2>Option Groups</h2>
+  <select name="country">
+    <optgroup label="Africa">
+      <option value="gam">Gambria</option>
+      <option value="mad">Madagascar</option>
+      <option value="nam">Nambia</option>
+    </optgroup>
+    <optgroup label="Europe">
+      <option value="fra">France</option>
+      <option value="rus">Russia</option>
+      <option value="uk">UK</option>
+    </optgroup>
+    <optgroup label="North America">
+      <option value="can">Canada</option>
+      <option value="mex">Mexico</option>
+      <option value="usa">USA</option>
+    </optgroup>
+  </select>
+  <h2>Navigating Fields</h2>
+  <code>input name="firstName" accesskey="f" tabindex="1"<code>
+
+</html>
