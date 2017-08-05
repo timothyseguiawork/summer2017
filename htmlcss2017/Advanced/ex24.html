@@ -1,0 +1,116 @@
+<!--
+Exercise 24: HTML5 Forms Pt. 1: Input Types
+08.05.17
+-->
+
+<!--
+HTML5 greatly advances form controls, with numerous input types, several new attributes,
+and a handful of extra elements.
+
+Additional input types
+  Basic form fields created using the "input" element include text, password, checkbox,
+  radio, and submit, which ahve already been covered in the HTML Beginner section. these
+  types have been extended in HTML5 to accommodate more specific fields:
+
+Search
+  Used for a search query text box, this performs exactly as a standard text input should.
+
+    <input type="search" name="search">
+
+  The main intention of the inclusion of this input type in the HTML5 specification
+  is one of style. As well as making your HTML clearer, you can also target this element
+  with a CSS attribute selector:
+
+    input[type=search] { background: url(magnifyingglass.png) right no-repeat }
+
+Telephone, URL, and Email Addresses type="tel", type="url", type="email"
+  Other "special" text input types include "tel" for telephone numbers, "url" for web addresses
+  and "email" for email addresses
+
+    <input type="tel" name="telephone_number">
+    <input type="url" name="web_address">
+    <input type="email" name="email_address"
+
+  You can use the :valid and :invalid CSS3 pseudo classes to style these fields depending on whether
+  their content is considered valid.
+
+    input[type=email]:valid { background: green }
+    input[type=email]:invalid { background: red }
+
+Numbers and Ranges type="number"
+  A simple text box that also allows a user to directly type in a number, or cycle through
+  numbers (usually using an up and down arrow to the side of the field), can be achieved
+  with type="number"
+
+  A further step attribute can be added to specify how much is added or subtracted from the
+  number with each increment.
+
+  If you also want the number to have a minimum or maximum value, you can further use the min and
+  max attributes.
+
+      <input type="number" name="quantity" step="2" min="20" max="30">
+
+  Once again, if this is supported, the user will be able either to type directly into
+  the field or, if using the arrows, cycle between 20 and 30, two units at a time.
+
+  One can use the :valid and :invalid pseudo classes in relation to this.
+  If one types "12" that would be invalid because it's not inbetween 20 and 30.
+
+  An alternative to "digits in a text box" approac could be achieved by using type="range"
+  resulting in the usage of a slider.
+
+    <input type="range" name="temperature" min="15" max="25" step="0.5" value=18.5>
+
+Dates and Times
+  There are several input types for dates and times:
+  - type="datetime"
+  - type="date"
+  - type="month"
+  - type="week"
+  - type="time"
+  - type="datetime-local"
+
+  If supported, these will prompt the user to enter a date or time in a specific format,
+  either by directly typing it in, cycling through one week/day/hour/minute/etc. at a time,
+  or by selecting from a dropdown calendar.
+
+  step, min, and max attributes can be used with dates and times, too, as can the CSS pseduo classes
+  to style according to validity.
+
+Color
+  Finally type="color" is designed to allow a user to select a color, sending a six-digit
+  hex code as it's value.
+
+    <input name="color" type="color" value="#ff8800"
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My 24th Webpage</title>
+  <link ref="stylesheet" href="ex24.css">
+</head>
+<body>
+  <h1>My 24th Webpage</h1>
+  <h2>A Search Query Text Box</h2>
+    <p><label for="search">Search</label>
+    <input type="search" name="search"></p>
+  <h2>Telephone, URL, and Email Addresses</h2>
+    <p><label for="tel" name="telephone_number">Telephone</label>
+    <input type="tel" name="telephone_number"></p>
+    <p><label for="url" name="web_address">URL</label>
+    <input type="url" name="web_address"></p>
+    <p><label for="email" name="email_address">Email</label>
+    <input type="email" name="email_address"></p>
+  <h2>Numbers and Ranges</h2>
+    <h3>Text Box</h3>
+      <label for="number" name=quantity>Number Text Box</label>
+      <input type="number" name="quantity" step="2" min="20" max="30">
+    <h3>Slider</h3>
+      <label for="range" name="temperature">Temperature</label>
+      <input type="range" name="temperature" min="15" max="25" step="0.5" value="18.5">
+  <h2>Color</h2>
+    <label for="color" name="color">Color Inside Box</label>
+    <input name="color" type="color" value="#ff8800">
+</body>
+</html>
