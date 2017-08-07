@@ -1,0 +1,79 @@
+<!--
+Exercise 25: HTML5 Forms Pt 2: Attributes and Data Lists
+08.07.17
+-->
+
+<!--
+More Attributes
+  As well as those attributes mentioned, both here and in earlier guides, there
+  is a handful of additional attributes:
+
+Placeholder Text
+  The placeholder attribute cna be used with text "input" fields (and their text-like
+  cousins, such as type="email" and type="number") as well as "textarea" elements.
+  It is intended as a hint, rather than a label, for which a "label" element should
+  still be used.
+
+    <label for="email_address">Email Address</label>
+    <input type="email" placeholder="you@somewhere.com" name="email_address" id="email_address">
+
+Autofocus
+  You might want to focus to land on a form field when a page loads. If you think of
+  a search engine, for example, when you land on its homepage you don't normally need
+  to click on the search box to start typing - You can do so straigh away because it
+  already has focus. The autofocus attribute is a quick way to achieve this effect.
+
+    <input name="query" autofocus>
+
+Data lists
+  A datalist takes the form of a list of suggestions that accompanies a text field:
+
+    <input name="country" list="country_name">
+    <datalist id="country_name">
+      <option value="Afghanistan">
+      <option value="Albania">
+      <option value="Algeria">
+      <option value="Andorra">
+      <option value="Armenia">
+      <option value="Australia">
+      <option value="Austria">
+      <option value="Azerbaijan">
+      list goes on...
+    </datalist>
+
+  The value of the "list" attribute in the "input" element which could be any of
+  the text-like input types, binds it to a "datalist" element with the corresponding ID
+  "country_name" for example. As a user types in the text field, if what they type matches
+  the start of anything in the datalist, those matches will be shown underneath the text
+  field as suggestions. So, here, if "A" is typed, the 8 countries beginning with "A" are
+  displayed. If "l" is typed after "A" the list of suggestios will reduce to "Albania" and
+  "Algeria".
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My 25th Webpage</title>
+</head>
+<body>
+  <h1>My 25th Webpage</h1>
+  <h2>Placeholder Text</h2>
+  <label for="email_address">Email Address</label>
+  <input type="email" placeholder="you@somewhere.com" name="email_address" id="email_address">
+  <h2>Auto Focus</h2>
+  <input name="query" autofocus>
+  <h2>Data list </h2>
+  <input name="country" list="country_name">
+  <datalist id="country_name">
+    <option value="Afghanistan">
+    <option value="Albania">
+    <option value="Algeria">
+    <option value="Andorra">
+    <option value="Armenia">
+    <option value="Australia">
+    <option value="Austria">
+    <option value="Azerbaijan">
+  </datalist>
+</body>
+</html>
