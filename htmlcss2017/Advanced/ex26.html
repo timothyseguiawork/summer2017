@@ -1,0 +1,96 @@
+<!--
+Exercise 26: Embedded Content, Video, Audio and Canvas
+08.09.17
+-->
+
+<!--
+Video
+    <video src = "kitties.mp4 controls"></video>
+
+  The controls attribute is optional but if you don’t want it - if you really want
+  to take control away from the user - you can just slap in an autoplay attribute:
+
+    <video src="kitties.mp4" autoplay></video>
+
+  Other basic attributes at your disposal include width, height, loop, and muted.
+
+    <video src="kitties.mp4" width="300" height="200" loop muted autoplay controls></video>
+
+Poster
+  Specifying a placeholder image, which will be displayed before the video is played,
+  with the poster attribute.
+
+    <video src="kitties.mp4" poster="fluffy.jpg" controls></video>
+
+  The specified image will stretch or shrink to fit the dimensions of the video,
+  regardless of the original size of the image.
+
+Fall-back content
+  Fall-back content is displayed if the browser doesn't understand the video element.
+  That could be a few words or a really funny lolcats image.
+
+    <video src="kitties.mp4" controls>
+      <img src="hahahaha.jpg" alt="Hilarious cat and caption saying'soz'.">
+    </video>
+
+Alternative content
+  If a browser can't figure out the content and can't handle the video type,
+  it would move on to the second source element.
+
+    <video controls>
+      <source src="kitties.mp4" type="video/mp4; codecs='avc1, mp4a'">
+      <source src="kitties.webm" type="video/webm; codecs='vp8.0,, vorbis'">
+      <p>Browser no likey html5.</p>
+    <video>
+
+Audio
+  Applying audio is just like applying video. Using the audio tag, the structure
+  is the same as using video and the attributes src, controls, autoplay, and loop can
+  all be used in the same way.
+
+    <audio src="meow_mix.mp3" controls>
+      Your stupid browser doesn't support HTML5 audio.
+    </audio>
+
+Canvas
+  A major addition to HTML5 is the canvas element. It is designed to provide
+  a canvas onto which JavaScript can be used to paint all manner of dynamic images
+  such as graphs, animated sprites, or draft cat pictures.
+
+    <canvas id="wittykitty" width="800" height="450">
+    </canvas>
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My 26th Webpage</title>
+</head>
+<body>
+  <h1>My 26th Webpage</h1>
+  <h2>Video</h2>
+  <p>Regular video with control</p>
+  <video src = "kitties.mp4 controls"></video>
+  <p>Video Ignoring Controls</p>
+  <video src="kitties.mp4" autoplay></video>
+  <p>Video with attributes</p>
+  <video src="kitties.mp4" width="300" height="200" loop muted autoplay controls></video>
+  <h2>Poster</h2>
+  <video src="kitties.mp4" poster="fluffy.jpg" controls></video>
+  <h2>Fall-back Content</h2>
+  <video src="kitties.mp4" controls>
+    <img src="hahahaha.jpg" alt="Hilarious cat and caption saying 'soz'.">
+  </video>
+  <h2>Alternative Content</h2>
+  <video controls>
+    <source src="kitties.mp4" type="video/mp4; codecs='avc1, mp4a'">
+    <source src="kitties.webm" type="video/webm; codecs='vp8.0, vorbis'">
+    <p>Browser no likey HTML 5.</p>
+  </video>
+  <h2>Audio</h2>
+  <audio src="meow_mix.mp3" controls>
+    Your stupid browser doesn't support HTML 5 audio.
+  </audio>
+</body>
+</html>
